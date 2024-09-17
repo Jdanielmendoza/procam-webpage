@@ -1,0 +1,27 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: var(--text-100);
+}
+
+:root {
+  --primary-100: #ffd700;
+  --primary-200: #ddb900;
+  --primary-300: #917800;
+  --accent-100: #4b0082;
+  --accent-200: #e396ff;
+  --text-100: #ffffff;
+  --text-200: #e0e0e0;
+  --bg-100: #1a1a1a;
+  --bg-200: #292929;
+  --bg-300: #404040;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--bg-100);
+}
+
+/* font-family: 'Teko Variable', sans-serif; */

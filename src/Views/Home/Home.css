@@ -1,0 +1,87 @@
+:root {
+  --primary-100: #ffd700;
+  --primary-200: #ddb900;
+  --primary-300: #917800;
+  --accent-100: #4b0082;
+  --accent-200: #e396ff;
+  --text-100: #ffffff;
+  --text-200: #e0e0e0;
+  --bg-100: #1a1a1a;
+  --bg-100-transparent: #1a1a1ac0;
+  --bg-200: #292929;
+  --bg-300: #404040;
+}
+.containerHome {
+  width: 100%;
+  min-height: 100vh;
+}
+.home__divider {
+  width: 100%;
+  height: 60px;
+  background-color: #ffd700;
+  display: grid;
+  place-content: center;
+}
+.home__divider > p {
+  color: #1a1a1a;
+  font-size: 1.3rem;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+}
+
+.container__home__custommachine {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  max-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home__custommachine {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  background-color: var(--bg-100-transparent);
+  backdrop-filter: blur(3px);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.home__custommachine > .item__customachine{
+    width: 100%;
+    max-width: 440px;
+}
+.item__customachine > .h3__title{
+    font-family: 'Teko Variable', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 10px;
+
+}
+.item__customachine > p {
+    font-size: 16px;
+    font-family: 'Roboto';
+    font-weight: 500;
+}
+.bg__plasma__home {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  object-fit: cover;
+  position: absolute;
+  z-index: 10;
+}
+.image__item__custommachine__home{
+    position: relative;
+    top: -70px;
+    z-index: 1000;
+}
+.image__item__custommachine__home > img {
+    width: 100%;
+    max-width: 450px;
+
+}

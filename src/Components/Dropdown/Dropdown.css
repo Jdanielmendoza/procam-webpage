@@ -1,0 +1,125 @@
+:root {
+  --primary-100: #ffd700;
+  --primary-200: #ddb900;
+  --primary-300: #917800;
+  --accent-100: #4b0082;
+  --accent-200: #e396ff;
+  --text-100: #ffffff;
+  --text-200: #e0e0e0;
+  --text-300: #bababa;
+  --bg-100: #1a1a1a;
+  --bg-200: #292929;
+  --bg-300: #404040;
+}
+
+.containerDropdown {
+  width: 100%;
+  height: 100%;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 500;
+  position: relative;
+  /* border: 1px solid red; */
+}
+.containerDropdown:hover{
+  cursor: pointer;
+}
+
+.containerDropdown > div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.titleDropdown {
+  color: var(--text-200);
+}
+.checvron-down-header {
+  transition: all 0.2s;
+}
+.titleDropdown:hover {
+  cursor: default;
+}
+.containerDropdown:hover .titleDropdown {
+  color: var(--primary-100);
+}
+.containerDropdown:hover .checvron-down-header {
+  transform: rotate(-180deg);
+}
+
+.containerDropdown > .containerList {
+  padding: 20px 0;
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  position: absolute;
+}
+.listDropdown {
+  list-style: none;
+  width: 100%;
+  min-width: 200px;
+  padding: 20px 15px 20px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  background-color: #9995;
+  backdrop-filter: blur(5px);
+  box-shadow: 1px 1px 5px 0 #3339, inset 1px 1px 5px 0 #9995;
+  border-radius: 5px;
+}
+
+.itemDrop {
+}
+
+.linkDropDownOP {
+  text-decoration: none;
+  font-size: 14px;
+  color: var(--text-300);
+  text-transform: uppercase;
+}
+.linkDropDownOP:hover {
+  color: var(--primary-100);
+}
+
+.containerDropdown:hover .containerList {
+  display: flex;
+}
+
+@media (width < 750px) {
+  .containerDropdown {
+    font-size: 18px;
+    padding-left: 0;
+  }
+  .containerDropdown > div {
+    /* border: 1px solid red; */
+    justify-content: start;
+    padding: 15px 20px;
+    text-transform: uppercase;
+  }
+
+  .containerDropdown > .containerList {
+    position: static;
+    padding: 0;
+  }
+  .listDropdown {
+    padding: 0;
+    gap: 0;
+    background-color: #9995;
+    backdrop-filter: blur(10px);
+    box-shadow: 1px 1px 5px 0 #3339, inset 1px 1px 5px 0 #9995;
+    border-radius: 0;
+  }
+  .listDropdown > .itemDrop {
+    display: inline-block;
+    
+  }
+  .linkDropDownOP {
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 15px;
+  }
+}
