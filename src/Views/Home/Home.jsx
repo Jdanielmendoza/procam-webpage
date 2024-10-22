@@ -2,7 +2,10 @@ import Slider from "../../Components/Slider/Slider";
 import "./Home.css";
 import machine2CNC from "./assets/machines/machine-cnc.webp";
 import bgPlasma from "./assets/backgrounds/bgPlasma.jpg";
+import useEmblaCarousel from 'embla-carousel-react'
+import Autoplay from 'embla-carousel-autoplay'
 const Home = () => {
+  const [emblaRef] = useEmblaCarousel({ loop: false }, [Autoplay()])
   return (
     <div className="containerHome">
       <Slider />
@@ -13,7 +16,7 @@ const Home = () => {
       {/*  */}
       <section className="container__home__custommachine">
         <img src={bgPlasma} alt="bg-plasma" className="bg__plasma__home" />
-        <div className="home__custommachine" >
+        <div className="home__custommachine">
           <div className="item__customachine">
             <h3 className="h3__title">Personalización sin límites</h3>
             <p>
@@ -37,6 +40,16 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      {/*  */}
+      <div className="embla" ref={emblaRef}>
+        <div className="embla__container">
+          <div className="embla__slide">Slide 1</div>
+          <div className="embla__slide">Slide 2</div>
+          <div className="embla__slide">Slide 3</div>
+          
+        </div>
+      </div>
     </div>
   );
 };
