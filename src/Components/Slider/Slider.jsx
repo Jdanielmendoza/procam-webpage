@@ -51,7 +51,10 @@ const Slider = () => {
               description2Box="Nuestros equipos CNC Router te darán servicio por años y años en tu negocio de manera confiable, visita nuestra sección de testimonios y conoce las experiencias otros empresarios que han trabajado por años con sus equipos."
             />
           </div>
-          <div className="embla__slide">
+         {/*  <div className="embla__slide">
+            
+          </div> */}
+         {/*  <div className="embla__slide">
             <BoxItem
               bgImageBlur="/imageSlider/bg2Slider.jpg"
               cncImage="/imageSlider/cnc2.png"
@@ -70,7 +73,7 @@ const Slider = () => {
               description2Box="Nuestros equipos CNC Router te darán servicio por años y años en tu negocio de manera confiable, visita nuestra sección de testimonios y conoce las experiencias otros empresarios que han trabajado por años con sus equipos."
               colorBox="#6F96B6"
             />
-          </div>
+          </div> */}
         </div>
       </div>
       {/* <span className="buttonSlzider leftChevron">
