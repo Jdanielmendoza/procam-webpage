@@ -28,25 +28,25 @@ const Footer = () => {
           <ul className="social-icons">
               <li>
                 <a className="facebook" href="#">
-                 {/*  <i className="fa fa-facebook"></i> */}
+                 
                  <IconBrandFacebookFilled />
                 </a>
               </li>
               <li>
                 <a className="twitter" href="#">
-                  {/* <i className="fa fa-twitter"></i> */}
+                  
                   <IconBrandWhatsapp stroke={2} />
                 </a>
               </li>
               <li>
                 <a className="dribbble" href="#">
-                  {/* <i className="fa fa-dribbble"></i> */}
+                  
                   <IconBrandInstagram stroke={2} />
                 </a>
               </li>
               <li>
                 <a className="linkedin" href="#">
-                  {/* <i className="fa fa-linkedin"></i> */}
+                  
                   <IconMail stroke={2} />
                 </a>
               </li>
