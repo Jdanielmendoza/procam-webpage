@@ -1,5 +1,5 @@
 import "./Footer.css"
-import {IconMail, IconBrandFacebookFilled, IconBrandWhatsapp,IconBrandInstagram } from '@tabler/icons-react';
+import {IconMail, IconBrandFacebookFilled, IconBrandFacebook, IconBrandWhatsapp,IconBrandInstagram } from '@tabler/icons-react';
 const Footer = () => {
   return (
     <footer className="site-footer">
@@ -29,11 +29,11 @@ const Footer = () => {
               <li>
                 <a className="facebook" href="#">
                  
-                 <IconBrandFacebookFilled />
+                 <IconBrandFacebook />
                 </a>
               </li>
               <li>
-                <a className="twitter" href="#">
+                <a className="whatsapp" href="#">
                   
                   <IconBrandWhatsapp stroke={2} />
                 </a>
