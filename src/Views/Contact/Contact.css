@@ -7,6 +7,9 @@
 .container__location__form__contact {
   width: 100%;
   padding: 40px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   /* border: 1px solid blue; */
 }
 .section__header__contact {
@@ -57,6 +60,7 @@
   width: 100%;
   display: flex;
   gap: 50px;
+  max-width: 1100px;
   /* border: 1px solid green; */
 }
 
@@ -170,4 +174,32 @@
   font-size: 0.8rem;
   font-family: "Roboto";
   padding: 1px 0;
+}
+
+
+/* breackpoints */
+
+/* Mobile 320px - 480px */
+/* tablet 481px - 768px */
+/* laptop 769 - 1024px */
+/* desktop 1025px - 1200px */
+
+@media (width < 1024px) {
+}
+@media (width < 768px) {
+  .container__form__location__cellphone__email {
+    flex-direction: column;
+    align-items: center;
+  }
+  .form__contact > section{
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .container__location__form__contact {
+    padding: 40px 10px;
+  }
+}
+@media (width < 480px) {
+  .form__contact{
+    width: 100%;
+  }
 }

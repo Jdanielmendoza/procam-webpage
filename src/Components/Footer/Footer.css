@@ -1,12 +1,12 @@
 /* Sistema de grillas básico */
 .custom-container__footer {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 0 50px;
 }
-
 
 /* Columna de 6 partes (para pantallas medianas) */
 .col-md-6 {
@@ -34,13 +34,14 @@
   font-size: 15px;
   font-family: "Roboto", sans-serif;
   line-height: 24px;
-  color: #737373;display: flex;
+  color: #737373;
+  display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.about__description__footer{
-    width: 100%;
-    padding: 5px 20px 5px 0px;
+.about__description__footer {
+  width: 100%;
+  padding: 5px 20px 5px 0px;
 }
 
 .site-footer hr {
@@ -107,7 +108,7 @@
 @media (max-width: 767px) {
   .site-footer {
     padding-bottom: 0;
-}
+  }
 
   .site-footer .copyright-text,
   .site-footer .social-icons {
@@ -124,11 +125,11 @@
 }
 
 .social-icons li {
-    width: 44px;
-    height: 44px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .social-icons li.title {
@@ -162,10 +163,23 @@
   background-color: #57be68;
 }
 
-.social-icons a.linkedin:hover {
+.social-icons a.mailancor:hover {
   background-color: #007bb6;
 }
 
-.social-icons a.dribbble:hover {
+.social-icons a.Instagram:hover {
   background-color: #ea4c89;
+}
+
+@media (width < 750px) {
+  .custom-container__footer {
+    padding: 10px 10px 40px;
+  }
+}
+
+@media (width < 480px) {
+  .custom-container__footer {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
 }
