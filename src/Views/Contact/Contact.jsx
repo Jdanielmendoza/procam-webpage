@@ -123,10 +123,10 @@ const Contact = () => {
               <li className="item__contact">
                 <IconMapPinFilled color="#000" size={45} />
                 <section>
-                  <h3 className="title__contact__items">Correo</h3>{" "}
+                  <h3 className="title__contact__items">Ubicacion</h3>{" "}
                   <p className="description__contact__items">
-                    Ruiz Cortines 214 PTE Col. <br /> Hercules <br /> Guadalupe,
-                    N.L. C.P. 67120
+                    Unifranz, Av Busch, 1113, <br /> Santa Cruz de la Sierra,
+                    Santa Cruz, Bolivia
                   </p>{" "}
                 </section>
               </li>
@@ -135,7 +135,7 @@ const Contact = () => {
                 <section>
                   <h3 className="title__contact__items">Teléfono</h3>{" "}
                   <p className="description__contact__items">
-                    Monterrey: 814 164 8031 <br /> CDMX: 559 014 6070
+                    Procam: +591-78318599 <br /> : SCZ: +591-60388024
                   </p>{" "}
                 </section>
               </li>
@@ -144,7 +144,7 @@ const Contact = () => {
                 <section>
                   <h3 className="title__contact__items">Correo</h3>{" "}
                   <p className="description__contact__items">
-                    procam@gmail.com
+                    maquinas@procamcnc.com
                   </p>{" "}
                 </section>
               </li>

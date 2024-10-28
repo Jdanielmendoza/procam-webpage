@@ -1,11 +1,12 @@
 import Slider from "../../Components/Slider/Slider";
 import "./Home.css";
 import machine2CNC from "./assets/machines/machine-cnc.webp";
+import cuttingAcrylic from "./assets/videos/Cutting_acrylic.mp4";
 import bgPlasma from "./assets/backgrounds/bgPlasma.jpg";
-import useEmblaCarousel from 'embla-carousel-react'
-import Autoplay from 'embla-carousel-autoplay'
+import useEmblaCarousel from "embla-carousel-react";
+import Autoplay from "embla-carousel-autoplay";
 const Home = () => {
-  const [emblaRef] = useEmblaCarousel({ loop: false }, [Autoplay()])
+  const [emblaRef] = useEmblaCarousel({ loop: false }, [Autoplay()]);
   return (
     <div className="containerHome">
       <Slider />
@@ -42,14 +43,21 @@ const Home = () => {
       </section>
 
       {/*  */}
-      <div className="embla" ref={emblaRef}>
+     {/*  <div className="embla" ref={emblaRef}>
         <div className="embla__container">
           <div className="embla__slide">Slide 1</div>
           <div className="embla__slide">Slide 2</div>
           <div className="embla__slide">Slide 3</div>
-          
         </div>
-      </div>
+      </div> */}
+      {/* <div className="video__home__cutting" >
+        <video src={cuttingAcrylic} loop muted autoPlay  >
+        <h4>
+          Con un enfoque en precisión, eficiencia y calidad, ayudamos a
+          optimizar los procesos de producción
+        </h4>
+        </video>
+      </div> */}
     </div>
   );
 };
