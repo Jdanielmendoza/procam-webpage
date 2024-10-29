@@ -3,10 +3,10 @@ import "./Home.css";
 import machine2CNC from "./assets/machines/machine-cnc.webp";
 import cuttingAcrylic from "./assets/videos/Cutting_acrylic.mp4";
 import bgPlasma from "./assets/backgrounds/bgPlasma.jpg";
-import useEmblaCarousel from "embla-carousel-react";
-import Autoplay from "embla-carousel-autoplay";
+
+import { IconGeometry, IconHeadset, IconBolt  } from "@tabler/icons-react";
+
 const Home = () => {
-  const [emblaRef] = useEmblaCarousel({ loop: false }, [Autoplay()]);
   return (
     <div className="containerHome">
       <Slider />
@@ -43,21 +43,44 @@ const Home = () => {
       </section>
 
       {/*  */}
-     {/*  <div className="embla" ref={emblaRef}>
+      {/*  <div className="embla" ref={emblaRef}>
         <div className="embla__container">
           <div className="embla__slide">Slide 1</div>
           <div className="embla__slide">Slide 2</div>
           <div className="embla__slide">Slide 3</div>
         </div>
       </div> */}
-      {/* <div className="video__home__cutting" >
-        <video src={cuttingAcrylic} loop muted autoPlay  >
-        <h4>
-          Con un enfoque en precisión, eficiencia y calidad, ayudamos a
-          optimizar los procesos de producción
-        </h4>
-        </video>
-      </div> */}
+      <div className="container__card__video__home">
+        <div className="card_video__home__cutting">
+          <div className="video__home__cutting">
+            <video src={cuttingAcrylic} loop muted autoPlay></video>
+          </div>
+          <div className="container__conternt__video">
+            <div>
+              <h3 class="title__video__home">Mejora tu Producción</h3>
+              <p className="description__video">
+                Con un enfoque en precisión, eficiencia y calidad, ayudamos a
+                optimizar los procesos de producción
+              </p>
+            </div>
+
+            <section>
+              <div className="tag__list__video">
+                <IconGeometry stroke={2} />
+                <p className="description__icon">Precisión</p>
+              </div>
+              <div className="tag__list__video">
+                <IconBolt stroke={2} />
+                <p className="description__icon">Eficiencia Energética</p>
+              </div>
+              <div className="tag__list__video">
+                <IconHeadset stroke={2} />
+                <p className="description__icon">Soporte Técnico</p>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
