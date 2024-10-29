@@ -36,7 +36,7 @@ const Header = () => {
         <nav className={isClickedMenu ? "Nav Nav-activate" : "Nav"}>
           <ul className="listNav">
             <li className="item item1">
-              <Link to="/" className="linkNav">
+              <Link to="/" className="linkNav" onClick={()=> setIsClickedMenu(false)} >
                 Inicio
               </Link>
             </li>
@@ -51,16 +51,16 @@ const Header = () => {
               />
             </li>
             <li className="item item3">
-              <Link className="linkNav" to="/vacantes">
+              <Link className="linkNav" to="/vacantes" onClick={()=> setIsClickedMenu(false)} >
                 Vacantes
               </Link>
             </li>
 
             <li className="item item4">
-              <Dropdown titleDropdown="Sobre Pro-Cam" />
+              <Dropdown titleDropdown="Sobre Pro-Cam"  />
             </li>
             <li className="item item5">
-              <Link className="linkNav" to="/contacto">
+              <Link className="linkNav" to="/contacto" onClick={()=> setIsClickedMenu(false)} >
                 Contacto
               </Link>
             </li>
