@@ -5,6 +5,7 @@ import cuttingAcrylic from "./assets/videos/Cutting_acrylic.mp4";
 import bgPlasma from "./assets/backgrounds/bgPlasma.jpg";
 
 import { IconGeometry, IconHeadset, IconBolt  } from "@tabler/icons-react";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -57,14 +58,14 @@ const Home = () => {
           </div>
           <div className="container__conternt__video">
             <div>
-              <h3 class="title__video__home">Mejora tu Producción</h3>
+              <h3 className="title__video__home">Mejora tu Producción</h3>
               <p className="description__video">
                 Con un enfoque en precisión, eficiencia y calidad, ayudamos a
                 optimizar los procesos de producción
               </p>
             </div>
 
-            <section>
+            <section className="container__tag__list__video" >
               <div className="tag__list__video">
                 <IconGeometry stroke={2} />
                 <p className="description__icon">Precisión</p>
@@ -78,6 +79,8 @@ const Home = () => {
                 <p className="description__icon">Soporte Técnico</p>
               </div>
             </section>
+
+            <Link to="/" className="button__callToAction">Pide tu Cotización</Link>
           </div>
         </div>
       </div>
